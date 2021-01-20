@@ -1,10 +1,9 @@
-def maximum_number(num1, num2, num3):
-    if num1 > num2 and num1 > num3:
-        return num1
-    elif num2 > num1 and num2 > num3:
-        return num2
-    else:
-        return num3
-    return max
+def maximum_number(*args):
+    max_num = 0
+    for i in args:
+        if i > max_num:
+            max_num = i
+    return max_num
 
-print(maximum_number(10,4,7))
+
+print(maximum_number(10,4,7,10,30))

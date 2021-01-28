@@ -1,9 +1,9 @@
 def maximum_number(*args):
-    max_num = 0
+    max_num = float('-inf')
     for i in args:
         if i > max_num:
             max_num = i
     return max_num
 
 
-print(maximum_number(10,4,7,10,30))
+print(maximum_number(-10,-4,-7,-10,-30))

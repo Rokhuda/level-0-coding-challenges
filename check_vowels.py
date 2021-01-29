@@ -1,6 +1,6 @@
-def check_vowels(str):
+def check_vowels(string):
     vowels =""
-    for letter in str:
+    for letter in string:
         if letter in "aeiouAEIOU":
             vowels += letter
     return vowels

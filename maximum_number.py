@@ -1,5 +1,5 @@
 def maximum_number(*args):
-    max_num = float('-inf')
+    max_num = args[0]
     for i in args:
         if i > max_num:
             max_num = i
